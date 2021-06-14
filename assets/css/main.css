@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --primary: #00000;
+    --secondary: #FFFFFF;
+    --tertiary: #8F8F8F;
+    --background: #333646;
+    --backgroundLight: #61688A;
+    --accent: #FF7A00;
+}
+
+.background{
+    height: 100vh;
+}
+
+.background img{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -4;
+}
+
+.me{
+    z-index: -1 !important;
+    transform: translate(0, -5%);
+}
+
+.sea{
+    transform: translate(0, -4%);
+
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContent{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+}
+
+.mainTitle{
+    position: absolute;
+    color: var(--background);
+    font-size: 180px;
+    max-width: 800px;
+    line-height: 150px;
+    top: 23%;
+    left: 31%;
+    transform: translate(-31%, -15%);
+    z-index: -2;
+}
+
+.mainTitle::after{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 20px;
+    background-color: var(--accent);
+    top: 105%;
+    left: 0%
+}
+
+.hero_1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--background);
+}
+
+
+.projects{
+    height: 100vh;
+    background-color: var(--backgroundLight);
+}
