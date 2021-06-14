@@ -18,15 +18,21 @@
             <nav class="nav">
                 <div class="navContent">
                     <img src="./images/logo/JL_Dark.png" alt="logo" class="logo">
-                    <div class="navitems">
-                        <li class="navlinks">Home</li>
-                        <li class="navlinks">About</li>
-                        <li class="navlinks">Projects</li>
+                    <div class="navItems">
+                        <a class="navlinks" href='/'>Home</a>
+                        <a id="aboutBtn" class="navlinks" onclick="scrollClickAbout()">About</a>
+                        <a class="navlinks" onclick="scrollClickProjects()">Projects</a>
                     </div>
                 </div>
             </nav>
-            <div class="mainSectionLeft">
+            <div class="mainSection">
                 <h1 class="mainTitle">Jeremy Lee</h1>
+                <h1 class="subTitle">My Portfolio</h1>
+                <p class="description">
+                    Welcome to my personal portfolio website. 
+                    I am an aspiring front-end developer/ designer 
+                    looking for a chance to prove myself in this industry.
+                </p>
             </div>
             <div class="background">
                 <img src="./images/landingPageImages/Sky.png" class="sky" alt="sky">
@@ -36,7 +42,7 @@
             </div>
         </div>
 
-        <div class="hero_1">
+        <div class="hero_1" id="about">
             <h1 class="aboutMe">About Me</h1>
         </div>
         <div class="projects">Projects</div>

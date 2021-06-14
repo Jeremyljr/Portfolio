@@ -16,3 +16,15 @@ timeline
         .setTween(timeline)
         .setPin('section')
         .addTo(controller);
+
+
+function scrollClickAbout() {
+    // about.scrollIntoView();
+    window.scroll(0, 2400)
+}
+
+function scrollClickProjects() {
+    // about.scrollIntoView();
+    window.scroll(0, 4800)
+}
+
