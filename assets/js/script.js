@@ -1,3 +1,4 @@
+//Background effect
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
@@ -18,13 +19,14 @@ timeline
         .addTo(controller);
 
 
+console.log((window.innerHeight*2.5))
+//Smaooth scroll
 function scrollClickAbout() {
-    // about.scrollIntoView();
-    window.scroll(0, 2400)
+    window.scroll(0, (window.innerHeight*2.5))
 }
 
 function scrollClickProjects() {
-    // about.scrollIntoView();
-    window.scroll(0, 4800)
+
+    window.scroll(0, (window.innerHeight*5))
 }
 
