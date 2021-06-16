@@ -10,6 +10,21 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar-track {
+  /* border-radius: 10px; */
+  background-color: rgb(49, 49, 49);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--accent);
+}
+
 :root {
   --primary: #00000;
   --secondary: #ffffff;
@@ -96,9 +111,7 @@ a {
   z-index: -2;
 }
 
-.mainTitle::after,
-.aboutMeTitle::after,
-.skillsTitle::after {
+.mainTitle::after {
   position: absolute;
   content: "";
   width: 110px;
@@ -107,6 +120,7 @@ a {
   top: 105%;
   left: 0%;
 }
+
 .mainRight {
   position: absolute;
   top: 22%;
@@ -137,14 +151,17 @@ a {
 
 .aboutAndSkillsContainer {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
-  min-height: 40%;
+  justify-content: space-around;
+  width: 80vw;
+  max-height: 90vh;
+  min-height: 50vh;
+  flex-wrap: wrap;
 }
 
 /* About me */
 .aboutMe {
-  max-width: 30vw;
+  width: 30vw;
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,10 +174,12 @@ a {
   font-weight: var(--bold);
 }
 
-.aboutMeTitle::after {
-  top: 36%;
-  left: 15%;
+.bar {
+  position: absolute;
+  background-color: var(--accent);
   height: 10px;
+  width: 100px;
+  margin-top: 50px;
 }
 
 .aboutContent {
@@ -172,6 +191,7 @@ a {
 
 .aboutRight {
   width: 70%;
+  padding-left: 20px;
 }
 
 .avatar {
@@ -195,32 +215,46 @@ a {
 
 /* skills */
 .skills {
-  background-color: rgb(64, 89, 110);
   width: 30vw;
-  max-width: 40vw;
-}
-
-/* .skillsTitle {
-  max-width: 40vw;
-} */
-
-.skillsTitle::after {
-  top: 36%;
-  left: 54.7%;
-  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .skillsItem {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80%;
 }
 
-.skillIcon {
-  width: 25%;
+.skillsIcon {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  color: var(--background);
+}
+
+.ps {
+  /* aspect-ratio: 1/1; */
+  width: 90px;
+  height: 90px;
+}
+
+.curve {
+  width: 100%;
+  position: absolute;
+  bottom: -0.2%;
 }
 
 /* Projects */
 .projects {
   height: 100vh;
   background-color: var(--background);
+}
+
+@media screen and (max-width: 1366px) {
+  /* .aboutAndSkillsContainer {
+    display: flex;
+    justify-content: space-between;
+  } */
 }
