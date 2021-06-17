@@ -315,11 +315,11 @@ a {
   width: 50vw;
   left: -50px;
   object-fit: cover;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 
 .projectMockup:hover {
-  transform: translate(-140px, 0);
+  /* transform: translate(-140px, 0); */
   width: 55vw;
 }
 
