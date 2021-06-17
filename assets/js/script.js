@@ -27,6 +27,6 @@ function scrollClickAbout() {
 
 function scrollClickProjects() {
 
-    window.scroll(0, (window.innerHeight*5))
+    window.scroll(0, (window.innerHeight*3.8))
 }
 
