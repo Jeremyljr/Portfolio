@@ -44,6 +44,9 @@ html {
   align-items: center;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Background */
 
 .background {
@@ -232,11 +235,11 @@ a {
 .fab {
   color: var(--background);
   padding: 15px 15px 0 0;
+  transition: 0.5s ease;
 }
 
 .fab:hover {
   color: var(--secondary);
-  transition: 0.5s ease;
 }
 
 /* skills */
@@ -470,6 +473,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .footerContainer {

@@ -31,6 +31,28 @@ function scrollClickAbout() {
     window.scroll(0, (window.innerHeight*2.5))
 }
 
+function ClickAbout() {
+    
+    // console.log(document.URL)
+    // // location.href='#hero_1'
+    // if (document.URL.includes("http://127.0.0.1:5500/index.html")) {
+    //     window.scroll(0, (window.innerHeight*2.5))
+    //     console.log("scrolled")
+    //   }    
+
+    // setTimeout(scrollClickAbout, 3000);
+
+    // location.href='../../index.html'
+    window.addEventListener("load", function(){
+        console.log("loaded")
+        location.href='../../index.html'
+        scrollClickAbout
+    }); 
+
+}
+
+
+
 function scrollClickProjects() {
 
     window.scroll(0, (window.innerHeight*3.8))
