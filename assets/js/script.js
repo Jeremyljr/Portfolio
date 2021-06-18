@@ -36,3 +36,7 @@ function scrollClickProjects() {
     window.scroll(0, (window.innerHeight*3.8))
 }
 
+let tl = gsap.timeline({scrollTrigger:{ trigger:'.hero_1', start: "center bottom"}});
+
+tl.from(".aboutMe", { x: -200, opacity: 0, duration: 1, delay: 0.3})
+.from(".skills", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
