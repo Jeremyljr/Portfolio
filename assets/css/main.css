@@ -30,7 +30,7 @@ html {
   --secondary: #ffffff;
   --tertiary: #8f8f8f;
   --background: #333646;
-  --backgroundLight: #61688a;
+  --backgroundLight: #4a506d;
   --accent: #ff7a00;
 
   --light: 100;
@@ -139,9 +139,10 @@ a {
 
 .mainRight {
   position: absolute;
-  top: 8.5%;
+  top: 7.8%;
   right: 12%;
   color: var(--background);
+  width: 20vw;
 }
 
 .subTitle {
@@ -245,7 +246,7 @@ a {
 
 /* skills */
 .skills {
-  width: 30vw;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -436,7 +437,7 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   /* margin: 0 5vw 0; */
-  margin-right: 5vw;
+  margin: 0px 5vw;
 }
 
 .freelanceLogo {
@@ -496,9 +497,236 @@ button:hover {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1366px) {
-  /* .aboutAndSkillsContainer {
-    display: flex;
-    justify-content: space-between;
-  } */
+/* media queries */
+@media screen and (max-width: 1300px) {
+  .skills {
+    width: 30vw;
+  }
+
+  .mainRight {
+    width: 25vw;
+    top: 7.3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainTitle {
+    font-size: 15vw;
+    max-width: 300px;
+    line-height: 12vw;
+    top: 6%;
+    left: 15%;
+  }
+
+  .mainRight {
+    top: 11%;
+    left: 15%;
+    width: 40vw;
+  }
+
+  .me {
+    left: 100px;
+  }
+
+  .hero_1 {
+    height: 100vh;
+  }
+
+  .aboutAndSkillsContainer {
+    margin-bottom: 0;
+  }
+  .curve {
+    top: 94vh;
+  }
+
+  .projects {
+    margin-top: 0;
+    min-height: 200vh;
+  }
+
+  .freelancing {
+    min-height: 100vh;
+  }
+
+  .curve_2 {
+    bottom: 130vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .curve {
+    top: 94.5vh;
+    z-index: 6;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .curve_2 {
+    bottom: 129vh;
+  }
+
+  .projects {
+    min-height: 280vh;
+  }
+
+  .individualProjects {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  #moneger,
+  #TTT {
+    flex-wrap: wrap-reverse;
+  }
+
+  .projectImageContainer {
+    width: 100%;
+  }
+
+  .projectMockup {
+    width: 90vw;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .projectInfoContainer {
+    max-width: 100%;
+  }
+}
+
+/* IPX */
+@media screen and (max-width: 600px) {
+  .navContent {
+    width: 90%;
+  }
+
+  .navItems {
+    justify-content: space-around;
+  }
+
+  .me {
+    left: 50px;
+  }
+
+  .mainTitle {
+    font-size: 23vw;
+    line-height: 19vw;
+    top: 4%;
+    left: 10%;
+  }
+
+  .mainRight {
+    top: 7%;
+    left: 10%;
+    width: 90vw;
+  }
+
+  .description {
+    color: var(--secondary);
+  }
+
+  .hero_1 {
+    height: 180vh;
+    align-items: flex-start;
+  }
+
+  .aboutAndSkillsContainer {
+    margin-top: 30px;
+    max-height: 200vh;
+  }
+
+  .aboutContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutRight {
+    width: 100%;
+    padding: 20px 0px 20px;
+    text-align: center;
+  }
+
+  .skills {
+    margin-top: 100px;
+  }
+
+  .projects {
+    margin-top: 80vh;
+  }
+
+  .curve {
+    top: 177vh;
+  }
+
+  .projectMockup {
+    width: 120vw;
+  }
+
+  .individualFreelancingContainer {
+    flex-wrap: wrap;
+  }
+
+  .freelanceCard {
+    margin-bottom: 40px;
+  }
+
+  .freelanceInfo {
+    min-height: 450px;
+  }
+}
+
+/* max heights */
+@media screen and (max-height: 768px) {
+  .mainRight {
+    top: 7%;
+    width: 30vw;
+  }
+
+  .mainTitle {
+    top: 6%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .mainTitle {
+      top: 4%;
+    }
+
+    .mainRight {
+      top: 60vh;
+      width: 50vw;
+    }
+  }
+
+  /* iphones (not IPX) */
+  @media screen and (max-width: 600px) {
+    .mainRight {
+      top: 7.5%;
+      width: 90vw;
+    }
+
+    .curve {
+      top: 176vh;
+    }
+
+    .curve_2 {
+      bottom: 224vh;
+    }
+
+    .projects {
+      min-height: 380vh;
+    }
+
+    .subTitle {
+      font-size: 50px;
+    }
+  }
 }
