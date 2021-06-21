@@ -46,7 +46,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #000000;
+  background: url(../../images/landingPageImages/Sky.png);
 }
 /* Background */
 
@@ -619,6 +619,9 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    height: 25vh;
+  }
   .aboutMe {
     width: 100%;
     margin-bottom: 50px;
