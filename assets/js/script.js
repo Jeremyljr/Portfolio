@@ -63,13 +63,13 @@ const projectButton = document.getElementById("projectBtn")
 function scrollClickAbout() {
     function myFunction(x) {
         if (x.matches) {
-            window.scroll(0, (window.innerHeight*2.75))
+            window.scroll(0, (window.innerHeight*2.5))
 
         } else {
             window.scroll(0, (window.innerHeight*2.5))
         }
     }
-    var x = window.matchMedia("(max-height: 1366px)")
+    var x = window.matchMedia("(max-height: 700px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction)
 }
@@ -163,3 +163,38 @@ function myFunction(x) {
   var x = window.matchMedia("(max-height: 700px)")
   myFunction(x) // Call listener function at run time
   x.addListener(myFunction)
+
+
+//view my work animations
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 3500
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 640,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });

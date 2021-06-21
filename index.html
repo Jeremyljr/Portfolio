@@ -26,7 +26,7 @@
                     <img src="./images/logo/JL_Dark.png" alt="logo" class="logo">
                     <div class="navItems">
                         <a class="navLinks" href='/'>Home</a>
-                        <a class="navLinks" id="aboutBtn" onclick="scrollClickAbout(this.id)">About</a>
+                        <a class="navLinks" id="aboutBtn" onclick="scrollClickAbout()">About</a>
                         <a class="navLinks" id="projectBtn" onclick="scrollClickProjects()">Projects</a>
                     </div>
                 </div>
@@ -40,6 +40,12 @@
                         I am an aspiring front-end developer/ designer
                         looking for a chance to prove myself in this industry.
                     </p>
+                    <h1 class="ml11">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters" onclick="scrollClickProjects()">Click me to view My Work</span>
+                        </span>
+                    </h1>
                 </div>
             </div>
             <div class="background">
@@ -48,6 +54,23 @@
                 <img src="./images/landingPageImages/Leaves.png" class="leaves" alt="leaves">
                 <img src="./images/landingPageImages/Me_2.png" class="me" alt="Jeremy">
             </div>
+            <!-- <p class="scrollWord">scroll</p> -->
+            <!-- <p class="ml14 scrollWord" onclick="scrollClickAbout()" >
+                <span class="text-wrapper">
+                  <span class="letters">scroll</span>
+                  <span class="line"></span>
+                </span>
+            </p> -->
+            <lottie-player 
+            onclick="scrollClickAbout()" 
+            class="scroll" 
+            src="https://assets7.lottiefiles.com/packages/lf20_kzkud5mm.json"  
+            background="transparent"  
+            speed="1"  
+            style="width: 50px; height: 50px;"  
+            loop  
+            autoplay>
+            </lottie-player>
         </div>
         <!-- main section end -->
         <!-- about me start -->
@@ -131,9 +154,9 @@
                         </div>
                         <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime atque laboriosam porro tenetur aliquid ducimus ad quos, cumque et?</p>
                         <div class="projectButtons">
-                            <button onclick=" location.href='assets/html/project.html' " type="button" class="learnMoreButton">Learn More</button>
-                            <button onclick=" location.href='http://www.example.com' " type="button" class="watchLiveButton">Watch Live</button>
-                            <a href="https://github.com/Jeremyljr" class="fab fa-github fa-2x projGithub"></a>
+                            <button type="button" class="learnMoreButton"><a href="./assets/html/project.html">Learn More</a></button>
+                            <button type="button" class="watchLiveButton"><a href="https://spshurl.herokuapp.com/">Watch Live</a></button>
+                            <a href="https://github.com/kjc1998/URL_Shortener" class="fab fa-github fa-2x projGithub"></a>
                         </div>
                     </div>
                 </div>
@@ -145,8 +168,8 @@
                         </div>
                         <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime atque laboriosam porro tenetur aliquid ducimus ad quos, cumque et?</p>
                         <div class="projectButtons">
-                            <button onclick=" location.href='./assets/css/main.css' " type="button" class="learnMoreButton">Learn More</button>
-                            <button onclick=" location.href='http://www.example.com' " type="button" class="watchLiveButton">Watch Live</button>
+                            <button type="button" class="learnMoreButton"><a href="">Learn More</a></button>
+                            <button type="button" class="watchLiveButton"><a href="https://jeremyljr.github.io/Moneger/">Watch Live</a></button>
                             <a href="https://github.com/Jeremyljr" class="fab fa-github fa-2x projGithub"></a>
                         </div>
                     </div>
@@ -167,8 +190,8 @@
                         </div>
                         <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime atque laboriosam porro tenetur aliquid ducimus ad quos, cumque et?</p>
                         <div class="projectButtons">
-                            <button onclick=" location.href='./assets/css/main.css' " type="button" class="learnMoreButton">Learn More</button>
-                            <button onclick=" location.href='http://www.example.com' " type="button" class="watchLiveButton">Watch Live</button>
+                            <button  type="button" class="learnMoreButton"><a href="">Learn More</a></button>
+                            <button  type="button" class="watchLiveButton"><a href="">Watch Live</a></button>
                             <a href="https://github.com/Jeremyljr" class="fab fa-github fa-2x projGithub"></a>
                         </div>
                     </div>
@@ -181,8 +204,8 @@
                         </div>
                         <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime atque laboriosam porro tenetur aliquid ducimus ad quos, cumque et?</p>
                         <div class="projectButtons">
-                            <button onclick=" location.href='./assets/css/main.css' " type="button" class="learnMoreButton">Learn More</button>
-                            <button onclick=" location.href='http://www.example.com' " type="button" class="watchLiveButton">Watch Live</button>
+                            <button type="button" class="learnMoreButton"><a href="">Learn More</a></button>
+                            <button type="button" class="watchLiveButton"><a href="https://jeremyljr.github.io/TicTacToe/">Watch Live</a></button>
                             <a href="https://github.com/Jeremyljr" class="fab fa-github fa-2x projGithub"></a>
                         </div>
                     </div>
@@ -211,7 +234,8 @@
                                 <p class="projectSubtitle">Redesign the UI of the website using Wix</p>
                             </div>
                             <p class="projectDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, in nobis! Vero cupiditate ab quisquam fuga dignissimos voluptatibus consequuntur laboriosam, soluta officia qui enim consequatur adipisci tenetur ipsum aspernatur assumenda.</p>
-                            <button onclick=" location.href='./assets/css/main.css' " type="button" class="learnMoreButton">Visit Website</button>
+                            <button type="button" class="learnMoreButton"><a href="https://www.urosense.com/">Visit Website</a></button>
+
                         </div>
                     </div>
                     <div class="freelanceCard">
@@ -224,7 +248,7 @@
                                 <p class=" projectSubtitle">inject custom code to the shopify website</p>
                             </div>
                             <p class="projectDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, in nobis! Vero cupiditate ab quisquam fuga dignissimos voluptatibus consequuntur laboriosam, soluta officia qui enim consequatur adipisci tenetur ipsum aspernatur assumenda.</p>
-                            <button onclick=" location.href='./assets/css/main.css' " type="button" class="learnMoreButton">Visit Website</button>
+                            <button type="button" class="learnMoreButton"><a href="https://twopeas.art/">Visit Website</a></button>
                         </div>
                     </div>
                 </div>
@@ -236,9 +260,9 @@
                 <img src="./images/logo/JL_Light.png" alt="logo" class="logo">
                 <div class="socialsContainer">
                     <a href="https://github.com/Jeremyljr" class="fab fa-github fa-2x projGithub"></a>
-                    <a href="https://github.com/Jeremyljr" class="fab fa-linkedin-in fa-2x projGithub"></a>
-                    <a href="https://github.com/Jeremyljr" class="fab fa-instagram fa-2x projGithub"></a>
-                    <a href="https://github.com/Jeremyljr" class="fab fas fa-envelope fa-2x projGithub"></a>
+                    <a href="https://www.linkedin.com/in/leejr00/" class="fab fa-linkedin-in fa-2x projGithub"></a>
+                    <a href="https://www.instagram.com/jeremyleejr/" class="fab fa-instagram fa-2x projGithub"></a>
+                    <a href="mailto: jeremyjiaren@gmail.com" class="fab fas fa-envelope fa-2x projGithub"></a>
                 </div>
                 <p style="font-size: 14px;">Website designed and coded by myself</p>
             </div>
@@ -253,6 +277,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    
+
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
