@@ -618,7 +618,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 834px) {
   .nav {
     height: 25vh;
   }
