@@ -592,8 +592,9 @@ button:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .scrollWord {
-    left: 70vw;
+  .scroll {
+    left: 50vw;
+    top: 80vh;
   }
 
   .mainTitle {
@@ -607,7 +608,7 @@ button:hover {
   .mainRight {
     top: 11%;
     left: 15%;
-    width: 40vw;
+    width: 50vw;
   }
 
   .me {
@@ -684,18 +685,22 @@ button:hover {
   }
 
   .bg {
-    display: none;
+    width: 400px;
+    height: 400px;
+    z-index: -2;
   }
 
   .projectInfoContainer {
+    z-index: 5;
     max-width: 100%;
   }
 }
 
 /* IPX */
 @media screen and (max-width: 600px) {
-  .scrollWord {
-    left: 60vw;
+  .scroll {
+    left: 77vw;
+    top: 77vh;
   }
 
   .navContent {
@@ -713,18 +718,23 @@ button:hover {
   .mainTitle {
     font-size: 23vw;
     line-height: 19vw;
-    top: 4%;
+    top: 3.5%;
     left: 10%;
   }
 
   .mainRight {
-    top: 7%;
+    top: 7.5%;
     left: 10%;
     width: 90vw;
   }
 
+  .subTitle {
+    font-size: 40px;
+  }
+
   .description {
     color: var(--secondary);
+    font-size: 16px;
   }
 
   .hero_1 {
@@ -805,8 +815,16 @@ button:hover {
 
   /* iphones (not IPX) */
   @media screen and (max-width: 600px) {
+    .scroll {
+      top: 77vh;
+    }
+
+    .mainTitle {
+      top: 3%;
+    }
+
     .mainRight {
-      top: 7.5%;
+      top: 6.5%;
       width: 90vw;
     }
 
@@ -824,6 +842,34 @@ button:hover {
 
     .subTitle {
       font-size: 50px;
+    }
+  }
+
+  /* IP6/7/8 */
+  @media screen and (max-width: 600px) {
+    .scroll {
+      top: 83vh;
+    }
+
+    .skills {
+      margin-top: 150px;
+    }
+
+    .hero_1 {
+      height: 200vh;
+    }
+
+    .curve {
+      top: 196vh;
+    }
+
+    .projects {
+      margin-top: 100vh;
+      min-height: 420vh;
+    }
+
+    .curve_2 {
+      bottom: 244vh;
     }
   }
 }
