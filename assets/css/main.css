@@ -284,15 +284,31 @@ a {
   max-height: 70%;
 }
 
+.aboutMeLinks {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .fa-github,
 .fa-linkedin-in,
 .fab {
   color: var(--background);
-  padding: 15px 15px 0 0;
   transition: 0.5s ease;
+  padding-right: 20px;
 }
 
 .fab:hover {
+  color: var(--secondary);
+}
+
+.cv > h1 {
+  color: #333646;
+  font-size: 30px;
+  font-weight: 900;
+  transition: 0.5s ease;
+}
+.cv > h1:hover {
   color: var(--secondary);
 }
 
@@ -365,8 +381,9 @@ a {
   background-color: #42465b;
   position: absolute;
   width: 22vw;
-  height: 20vw;
+  height: 22vw;
   margin: 1vw 9vw;
+  border-radius: 50%;
 }
 
 .projectMockup {
@@ -418,7 +435,13 @@ button > a:hover {
 }
 
 button > a {
-  color: var(--secondary);
+  color: var(--accent);
+}
+
+button:hover {
+  /* border: 3px solid white; */
+  background-color: var(--secondary);
+  color: var(--accent);
 }
 
 .learnMoreButton,
@@ -432,14 +455,12 @@ button > a {
   transition: 0.5s ease;
 }
 
-button:hover {
-  /* border: 3px solid white; */
-  background-color: var(--secondary);
-  color: var(--accent);
-}
-
 .learnMoreButton {
   background-color: var(--accent);
+  color: var(--primary);
+}
+
+.learnMoreButton > a {
   color: var(--secondary);
 }
 
@@ -492,7 +513,7 @@ button:hover {
   width: 400px;
   height: 600px;
   background-color: var(--background);
-  /* border-radius: 25px; */
+  border-radius: 25px;
   box-shadow: 8px 8px 20px 0px #00000040;
   display: flex;
   flex-direction: column;
@@ -504,7 +525,7 @@ button:hover {
 .freelanceLogo {
   object-fit: cover;
   width: 100%;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   transition: 0.5s ease;
 }
 
@@ -519,7 +540,7 @@ button:hover {
 .freelanceImageContainer {
   height: 100%;
   background-color: #000000;
-  /* border-radius: 25px 25px 0 0; */
+  border-radius: 25px 25px 0 0;
   display: flex;
   align-items: center;
 }
@@ -718,6 +739,10 @@ button:hover {
 
   .aboutContent {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutMeLinks {
     justify-content: center;
   }
 
