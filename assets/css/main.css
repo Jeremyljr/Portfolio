@@ -65,6 +65,7 @@ body {
 .me {
   z-index: -1 !important;
   transform: translate(0, -5%);
+  padding-right: 230px;
 }
 
 .sea {
@@ -591,7 +592,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .scroll {
     left: 50vw;
     top: 80vh;
@@ -612,7 +613,7 @@ button:hover {
   }
 
   .me {
-    left: 100px;
+    padding-right: 0px;
   }
 
   .hero_1 {
@@ -630,6 +631,10 @@ button:hover {
     margin-top: 0;
     min-height: 200vh;
   }
+
+  /* .projectMockup:hover {
+    width: 120vw;
+  } */
 
   .freelancing {
     min-height: 100vh;
@@ -684,10 +689,15 @@ button:hover {
     width: 90vw;
   }
 
+  .projectMockup:hover {
+    width: 90vw;
+  }
+
   .bg {
     width: 400px;
     height: 400px;
-    z-index: -2;
+    overflow-x: hidden;
+    /* z-index: -2; */
   }
 
   .projectInfoContainer {
@@ -711,9 +721,9 @@ button:hover {
     justify-content: space-around;
   }
 
-  .me {
+  /* .me {
     left: 50px;
-  }
+  } */
 
   .mainTitle {
     font-size: 23vw;
@@ -775,6 +785,10 @@ button:hover {
   }
 
   .projectMockup {
+    width: 120vw;
+  }
+
+  .projectMockup:hover {
     width: 120vw;
   }
 

@@ -96,40 +96,42 @@ tl.from(".aboutMe", { x: -200, opacity: 0, duration: 1, delay: 0.3})
 .from(".skills", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
 
 
-//projects animation
-let sp = gsap.timeline({scrollTrigger:{ trigger:'#spshurl', start: "center -=50%"}});
-
-sp.from("#spshurlImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-.from("#spshurlInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
- 
-
-let mg = gsap.timeline({scrollTrigger:{ trigger:'#moneger', start: "center -=50%"}});
-
-mg.from("#monegerImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-.from("#monegerInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
- 
-
-let wt = gsap.timeline({scrollTrigger:{ trigger:'#weather', start: "center -=50%"}});
-
-wt.from("#weatherImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-.from("#weatherInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
- 
-
-let tt = gsap.timeline({scrollTrigger:{ trigger:'#TTT', start: "center -=50%"}});
-
-tt.from("#TTTImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-.from("#TTTInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-          
-//freelancing animations
-let fl = gsap.timeline({scrollTrigger:{ trigger:'#freelancing', start: "center -=50%"}});
-
-fl.from("#freelancingCard", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-
 
   
-//function myFunction(x) {
-//   }
+function myFunction(x) {
+    if (x.matches) {
+        //projects animation
+        let sp = gsap.timeline({scrollTrigger:{ trigger:'#spshurl', start: "center -=50%"}});
+
+        sp.from("#spshurlImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
+        .from("#spshurlInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+        
+
+        let mg = gsap.timeline({scrollTrigger:{ trigger:'#moneger', start: "center -=50%"}});
+
+        mg.from("#monegerImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
+        .from("#monegerInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+        
+
+        let wt = gsap.timeline({scrollTrigger:{ trigger:'#weather', start: "center -=50%"}});
+
+        wt.from("#weatherImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
+        .from("#weatherInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+        
+
+        let tt = gsap.timeline({scrollTrigger:{ trigger:'#TTT', start: "center -=50%"}});
+
+        tt.from("#TTTImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
+        .from("#TTTInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+                
+        //freelancing animations
+        let fl = gsap.timeline({scrollTrigger:{ trigger:'#freelancing', start: "center -=50%"}});
+
+        fl.from("#freelancingCard", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+    }
+   
+  }
   
-//   var x = window.matchMedia("(max-height: 100px)")
-//   myFunction(x) // Call listener function at run time
-//   x.addListener(myFunction)
+  var x = window.matchMedia("(min-width: 1000px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction)
