@@ -348,11 +348,11 @@ a {
 
 /* Projects */
 .projects {
-  min-height: 300vh;
   background-color: var(--background);
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 30vh;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -478,8 +478,6 @@ button:hover {
 
 .curve_2 {
   width: 100%;
-  position: absolute;
-  bottom: 159vh;
 }
 
 /* freelancing */
@@ -629,7 +627,7 @@ button:hover {
 
   .projects {
     margin-top: 0;
-    min-height: 200vh;
+    /* min-height: 200vh; */
   }
 
   /* .projectMockup:hover {
@@ -667,9 +665,9 @@ button:hover {
     bottom: 129vh;
   }
 
-  .projects {
+  /* .projects {
     min-height: 280vh;
-  }
+  } */
 
   .individualProjects {
     flex-wrap: wrap;
@@ -850,9 +848,9 @@ button:hover {
       bottom: 224vh;
     }
 
-    .projects {
+    /* .projects {
       min-height: 380vh;
-    }
+    } */
 
     .subTitle {
       font-size: 50px;
@@ -879,7 +877,7 @@ button:hover {
 
     .projects {
       margin-top: 100vh;
-      min-height: 420vh;
+      /* min-height: 420vh; */
     }
 
     .curve_2 {
