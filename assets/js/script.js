@@ -127,16 +127,17 @@ Object.entries(object).map(([key, value])=>{
     
             desktop.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
             .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        } else if (y.matches){
-            let ipad = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "bottom -=50%"}});
+        } 
+        // else {
+        //     let ipad = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "bottom -=50%"}});
     
-            ipad.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
-            .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        }
+        //     ipad.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
+        //     .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
+        // }
     }
     
     var x = window.matchMedia("(min-width: 1000px)")
-    var y = window.matchMedia("(min-width: 300px)")
+    // var y = window.matchMedia("(min-width: 300px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction)
 })
