@@ -213,10 +213,11 @@ a {
 /* Hero 1 */
 .hero_1 {
   width: 100%;
-  height: 130vh;
+  height: 101vh;
   position: absolute;
   background-color: var(--backgroundLight);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
@@ -230,7 +231,8 @@ a {
   max-height: 90vh;
   min-height: 50vh;
   flex-wrap: wrap;
-  margin-bottom: 30vh;
+  margin-top: auto;
+  justify-self: center;
 }
 
 /* About me */
@@ -342,8 +344,10 @@ a {
 
 .curve {
   width: 100%;
-  position: absolute;
-  bottom: -0.2%;
+  /* position: absolute; */
+  /* bottom: -0.2%; */
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 /* Projects */
@@ -353,7 +357,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  /* margin-top: 30vh; */
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -615,7 +619,7 @@ button:hover {
   }
 
   .hero_1 {
-    height: 100vh;
+    height: 101vh;
   }
 
   .aboutAndSkillsContainer {
@@ -746,8 +750,8 @@ button:hover {
   }
 
   .hero_1 {
-    height: 180vh;
-    align-items: flex-start;
+    height: 181vh;
+    /* align-items: flex-start; */
   }
 
   .aboutAndSkillsContainer {
@@ -776,10 +780,6 @@ button:hover {
 
   .projects {
     margin-top: 80vh;
-  }
-
-  .curve {
-    top: 177vh;
   }
 
   .projectMockup {
