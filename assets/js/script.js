@@ -179,3 +179,28 @@ Object.entries(object).map(([key, value])=>{
 //   var x = window.matchMedia("(min-width: 1000px)")
 //   myFunction(x) // Call listener function at run time
 //   x.addListener(myFunction)
+
+//nav burger
+  
+const hamburger = document.querySelector(".hamburger");
+const navItems = document.querySelector(".navItems");
+const mainRight = document.querySelector(".mainRight");
+const scroll = document.querySelector(".scroll");
+
+const about = document.getElementById("aboutBtn");
+const project = document.getElementById("projectBtn");
+
+hamburger.addEventListener("click", () => {
+    mainRight.classList.toggle("open");
+    scroll.classList.toggle("open");
+  navItems.classList.toggle("open");
+
+});
+
+[about, project].forEach(item => {
+    item.addEventListener("click", ()=>{
+        navItems.classList.toggle("open")
+        mainRight.classList.toggle("open");
+        scroll.classList.toggle("open");
+    })
+})
