@@ -27,67 +27,48 @@ gsap.fromTo(".leaves", {opacity:1, x:300},{duration: 1, opacity:1 ,delay: 1.5 ,e
 gsap.fromTo(".mainRight", {opacity:0, x:100},{duration: 1, opacity:1 ,delay: 2 ,ease:"power3.out", x: 0});
 gsap.fromTo(".mainTitle", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"power3.out", x: 0});
 
-//TEST
-// const aboutButton = document.getElementById("aboutBtn")
-// const projectButton = document.getElementById("projectBtn")
-
-// document.getElementById("aboutBtn").onclick = click
-// console.log(aboutButton.id)
-
-// function click(clicked){
-//     console.log(this.id)
-//     if (this.id == aboutButton.id){
-//         if (x.matches) {
-//             window.scroll(0, (window.innerHeight*2.75))
-    
-//         } else {
-//             window.scroll(0, (window.innerHeight*2.5))
-//         }
-//         var x = window.matchMedia("(max-height: 1366px)")
-//         myFunction(x) // Call listener function at run time
-//         x.addListener(myFunction)
-//     } else {
-//         console.log("other")
-//     }
-
-// }
-
-
-// function scrollClickAbout(clicked) {
-//     console.log(clicked.id)
-    
-// }
-//TEST
-
+var offsetHeight = document.getElementById('hero_1').offsetHeight;
+console.log(offsetHeight)
 // Smooth scroll to sections
 function scrollClickAbout() {
+
     function myFunction(x) {
         if (x.matches) {
-            window.scroll(0, (window.innerHeight*2.5))
-
-        } else {
+            window.scroll(0, (window.innerHeight * 2))
+        }else if (y.matches){
+            window.scroll(0, (window.innerHeight * 1.79))
+        }else if (z.matches){
+            window.scroll(0, (window.innerHeight * 1.95))
+        }else {
             window.scroll(0, (window.innerHeight*1.5))
         }
     }
     var x = window.matchMedia("(max-height: 700px)")
+    var y = window.matchMedia("(max-height: 800px)")
+    var z = window.matchMedia("(max-height: 900px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction)
 }
 
 function scrollClickProjects() {
+
     function myFunction(x) {
         if (x.matches) {
-            window.scroll(0, (window.innerHeight*3.75))
-
-        } else {
-            window.scroll(0, (window.innerHeight*2.8))
+            window.scroll(0, ((window.innerHeight * 2) + offsetHeight))
+        }else if (y.matches){
+            window.scroll(0, ((window.innerHeight * 1.79) + offsetHeight))
+        }else if (z.matches){
+            window.scroll(0, ((window.innerHeight * 1.95) + offsetHeight))
+        }else {
+            window.scroll(0, ((window.innerHeight*1.5) + offsetHeight))
         }
     }
     var x = window.matchMedia("(max-height: 700px)")
+    var y = window.matchMedia("(max-height: 800px)")
+    var z = window.matchMedia("(max-height: 900px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction)
 }
-
 
 //about me animations
 let tl = gsap.timeline({scrollTrigger:{ trigger:'.hero_1', start: "top center"}});
@@ -128,12 +109,6 @@ Object.entries(object).map(([key, value])=>{
             desktop.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
             .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
         } 
-        // else {
-        //     let ipad = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "bottom -=50%"}});
-    
-        //     ipad.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
-        //     .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        // }
     }
     
     var x = window.matchMedia("(min-width: 1000px)")
@@ -141,44 +116,7 @@ Object.entries(object).map(([key, value])=>{
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction)
 })
-  
-// function myFunction(x) {
-//     if (x.matches) {
-//         //projects animation
-//         let sp = gsap.timeline({scrollTrigger:{ trigger:`${object.project1.id}`, start: "center -=50%"}});
 
-//         sp.from("#spshurlImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-//         .from("#spshurlInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        
-
-//         let mg = gsap.timeline({scrollTrigger:{ trigger:'#moneger', start: "center -=50%"}});
-
-//         mg.from("#monegerImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-//         .from("#monegerInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        
-
-//         let wt = gsap.timeline({scrollTrigger:{ trigger:'#weather', start: "center -=50%"}});
-
-//         wt.from("#weatherImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-//         .from("#weatherInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        
-
-//         let tt = gsap.timeline({scrollTrigger:{ trigger:'#TTT', start: "center -=50%"}});
-
-//         tt.from("#TTTImg", { y: 100, opacity: 0, duration: 1, delay: 0.3})
-//         .from("#TTTInfo", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-                
-//         //freelancing animations
-//         let fl = gsap.timeline({scrollTrigger:{ trigger:'#freelancing', start: "center -=50%"}});
-
-//         fl.from("#freelancingCard", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-//     }
-   
-//   }
-  
-//   var x = window.matchMedia("(min-width: 1000px)")
-//   myFunction(x) // Call listener function at run time
-//   x.addListener(myFunction)
 
 //nav burger
   
@@ -194,6 +132,7 @@ hamburger.addEventListener("click", () => {
     mainRight.classList.toggle("open");
     scroll.classList.toggle("open");
   navItems.classList.toggle("open");
+//   document.body.style.position.toggle = 'fixed';
 
 });
 

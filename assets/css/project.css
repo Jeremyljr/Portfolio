@@ -68,11 +68,15 @@ body {
 
 .navItems {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   list-style-type: none;
   width: 275px;
   font-weight: var(--bold);
+}
+
+.navLinks {
+  text-decoration: underline;
 }
 
 a {
@@ -285,9 +289,9 @@ button:hover {
     width: 90%;
   }
 
-  .navItems {
+  /* .navItems {
     justify-content: space-around;
-  }
+  } */
 
   .projectContainer {
     width: 90%;
