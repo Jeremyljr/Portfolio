@@ -84,18 +84,13 @@ a {
   cursor: pointer;
   color: var(--secondary);
 }
-
-.navLinks:hover {
-  color: var(--accent);
-  transition: 0.3s ease;
-}
 /* nav end */
 
 /* project section */
 .projectContainer {
   display: flex;
   flex-direction: column;
-  height: 700px;
+  /* height: 700px; */
   /* justify-content: center; */
 }
 
@@ -109,6 +104,9 @@ a {
 
 .projectImageContainer {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg {
@@ -117,20 +115,15 @@ a {
   width: 22vw;
   height: 20vw;
   margin: 1vw 9vw;
+  z-index: -1;
 }
 
 .projectMockup {
-  transform: translate(-100px, 0);
+  /* transform: translate(-100px, 0); */
   aspect-ratio: 1258 / 549;
-  width: 50vw;
-  left: -50px;
+  width: 150%;
   object-fit: cover;
   transition: 1s ease;
-}
-
-.projectMockup:hover {
-  /* transform: translate(-140px, 0); */
-  width: 53vw;
 }
 
 .projectInfoContainer {
@@ -169,13 +162,6 @@ a {
   cursor: pointer;
 }
 
-button:hover {
-  /* border: 3px solid white; */
-  background-color: var(--secondary);
-  color: black;
-  transition: 0.5s ease;
-}
-
 .learnMoreButton {
   background-color: var(--accent);
 }
@@ -193,6 +179,7 @@ button:hover {
 
 .curve {
   width: 100%;
+  margin-top: 80px;
   /* position: absolute; */
 }
 
@@ -243,6 +230,27 @@ button:hover {
   justify-content: space-around;
 }
 
+/* hovers */
+@media (hover: hover) and (pointer: fine) {
+  .navLinks:hover {
+    color: var(--accent);
+    transition: 0.3s ease;
+  }
+
+  .projectMockup:hover {
+    /* transform: translate(-140px, 0); */
+    /* width: 53vw; */
+    transform: scale(1.05);
+  }
+
+  button:hover {
+    /* border: 3px solid white; */
+    background-color: var(--secondary);
+    color: black;
+    transition: 0.5s ease;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .individualProjects {
     display: flex;
@@ -261,8 +269,7 @@ button:hover {
   }
 
   .projectMockup {
-    width: 700px;
-    transform: translate(-150px, 0);
+    width: 200%;
   }
 
   .curve {
@@ -271,10 +278,6 @@ button:hover {
 }
 
 @media screen and (max-width: 834px) {
-  .projectMockup {
-    transform: translate(-210px, 0);
-  }
-
   .projectInfoContainer {
     height: 500px;
   }
@@ -303,8 +306,7 @@ button:hover {
   }
 
   .projectMockup {
-    width: 500px;
-    transform: translate(-80px, 0);
+    width: 100%;
   }
 
   .individualProjects {

@@ -12,7 +12,7 @@ timeline
     let scene = new ScrollMagic.Scene({
         triggerElement: "section",
         duration: "150%",
-        triggerHook: 0, 
+        triggerHook: 0,
     })
         .setTween(timeline)
         .setPin('section')
@@ -28,7 +28,6 @@ gsap.fromTo(".mainRight", {opacity:0, x:100},{duration: 1, opacity:1 ,delay: 2 ,
 gsap.fromTo(".mainTitle", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"power3.out", x: 0});
 
 var offsetHeight = document.getElementById('hero_1').offsetHeight;
-console.log(offsetHeight)
 // Smooth scroll to sections
 function scrollClickAbout() {
 
@@ -40,7 +39,7 @@ function scrollClickAbout() {
         }else if (z.matches){
             window.scroll(0, (window.innerHeight * 1.95))
         }else {
-            window.scroll(0, (window.innerHeight*1.5))
+            window.scroll(0, (window.innerHeight * 1.5))
         }
     }
     var x = window.matchMedia("(max-height: 700px)")
@@ -76,27 +75,27 @@ let tl = gsap.timeline({scrollTrigger:{ trigger:'.hero_1', start: "top center"}}
 tl.from(".aboutMe", { x: -200, opacity: 0, duration: 1, delay: 0.3})
 .from(".skills", { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
 
-//template literals 
+//template literals
 const object = {
     project1 : {
         id: "#spshurl",
-        img: "#spshurlImg", 
-        info: "#spshurlInfo", 
+        img: "#spshurlImg",
+        info: "#spshurlInfo",
     },
     project2 : {
         id: "#moneger",
-        img: "#monegerImg", 
-        info: "#monegerInfo", 
+        img: "#monegerImg",
+        info: "#monegerInfo",
     },
     project3 : {
         id: "#weather",
-        img: "#weatherImg", 
-        info: "#weatherInfo", 
+        img: "#weatherImg",
+        info: "#weatherInfo",
     },
     project4 : {
         id: "#TTT",
-        img: "#TTTImg", 
-        info: "#TTTInfo", 
+        img: "#TTTImg",
+        info: "#TTTInfo",
     }
 }
 
@@ -105,12 +104,12 @@ Object.entries(object).map(([key, value])=>{
         if (x.matches) {
             //projects animation
             let desktop = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "center -=50%"}});
-    
+
             desktop.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
             .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")
-        } 
+        }
     }
-    
+
     var x = window.matchMedia("(min-width: 1000px)")
     // var y = window.matchMedia("(min-width: 300px)")
     myFunction(x) // Call listener function at run time
@@ -119,7 +118,7 @@ Object.entries(object).map(([key, value])=>{
 
 
 //nav burger
-  
+
 const hamburger = document.querySelector(".hamburger");
 const navItems = document.querySelector(".navItems");
 const mainRight = document.querySelector(".mainRight");
