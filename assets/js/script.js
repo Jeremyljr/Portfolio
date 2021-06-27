@@ -20,12 +20,13 @@ timeline
 
 
 // gsap.fromTo(".sky", {opacity:0},{duration: 1, opacity:1 ,delay: 0.3 ,ease:"power3.out", x: 0});
-gsap.fromTo(".me", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 0.7 ,ease:"power3.out", x: 0});
-gsap.fromTo(".sea", {opacity:0, y:100},{duration: 1, opacity:1 ,delay: 0.7 ,ease:"power3.out", y: 0});
-gsap.fromTo(".nav", {opacity:0, y:-100},{duration: 1, opacity:1 ,delay: 0.7 ,ease:"power3.out", y: 0});
-gsap.fromTo(".leaves", {opacity:1, x:300},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"power3.out", x: 0});
-gsap.fromTo(".mainRight", {opacity:0, x:100},{duration: 1, opacity:1 ,delay: 2 ,ease:"power3.out", x: 0});
-gsap.fromTo(".mainTitle", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"power3.out", x: 0});
+gsap.fromTo(".sea", {scale: 1.4, y:0, opacity: 1},{opacity: 1, duration: 7, scale: 1 ,delay: 1 ,ease:"expo", y: 0});
+gsap.fromTo(".me", {opacity:1, x:50},{duration: 7, opacity:1 ,delay: 1 ,ease:"expo", x: 0});
+// gsap.fromTo(".sea", {opacity:0, y:100},{duration: 1, opacity:1 ,delay: 1 ,ease:"expo", y: 0});
+gsap.fromTo(".nav", {opacity:0, y:-100},{duration: 1, opacity:1 ,delay: 1 ,ease:"expo", y: 0});
+gsap.fromTo(".leaves", {opacity:1, x:300},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"expo", x: 0});
+gsap.fromTo(".mainRight", {opacity:0, x:100},{duration: 1, opacity:1 ,delay: 2 ,ease:"expo", x: 0});
+gsap.fromTo(".mainTitle", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"expo", x: 0});
 
 var offsetHeight = document.getElementById('hero_1').offsetHeight;
 // Smooth scroll to sections
