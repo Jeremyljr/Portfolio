@@ -11,7 +11,7 @@ timeline
 
     let scene = new ScrollMagic.Scene({
         triggerElement: "section",
-        duration: "150%",
+        duration: "100%",
         triggerHook: 0,
     })
         .setTween(timeline)
@@ -29,45 +29,56 @@ gsap.fromTo(".mainRight", {opacity:0, x:100},{duration: 1, opacity:1 ,delay: 2 ,
 gsap.fromTo(".mainTitle", {opacity:0, x:-100},{duration: 1, opacity:1 ,delay: 1.5 ,ease:"expo", x: 0});
 
 var offsetHeight = document.getElementById('hero_1').offsetHeight;
+const sectionHeight = document.getElementById('mainSection')
+
+// console.log(sectionHeight.offsetHeight)
+// window.onscroll = function(){
+//     myFunction()
+// }
+
+// function myFunction() {
+//     console.log(window.scrollY)
+// }
+
 // Smooth scroll to sections
 function scrollClickAbout() {
-
-    function myFunction(x) {
-        if (x.matches) {
-            window.scroll(0, (window.innerHeight * 2))
-        }else if (y.matches){
-            window.scroll(0, (window.innerHeight * 1.79))
-        }else if (z.matches){
-            window.scroll(0, (window.innerHeight * 1.95))
-        }else {
-            window.scroll(0, (window.innerHeight * 1.5))
-        }
-    }
-    var x = window.matchMedia("(max-height: 700px)")
-    var y = window.matchMedia("(max-height: 800px)")
-    var z = window.matchMedia("(max-height: 900px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction)
+    window.scroll(0, (sectionHeight.offsetHeight))
+    // function myFunction(x) {
+    //     if (x.matches) {
+    //         window.scroll(0, (window.innerHeight * 2))
+    //     }else if (y.matches){
+    //         window.scroll(0, (window.innerHeight * 1.79))
+    //     }else if (z.matches){
+    //         window.scroll(0, (window.innerHeight * 1.95))
+    //     }else {
+    //         window.scroll(0, (window.innerHeight * 1.5))
+    //     }
+    // }
+    // var x = window.matchMedia("(max-height: 700px)")
+    // var y = window.matchMedia("(max-height: 800px)")
+    // var z = window.matchMedia("(max-height: 900px)")
+    // myFunction(x) // Call listener function at run time
+    // x.addListener(myFunction)
 }
 
 function scrollClickProjects() {
-
-    function myFunction(x) {
-        if (x.matches) {
-            window.scroll(0, ((window.innerHeight * 2) + offsetHeight))
-        }else if (y.matches){
-            window.scroll(0, ((window.innerHeight * 1.79) + offsetHeight))
-        }else if (z.matches){
-            window.scroll(0, ((window.innerHeight * 1.95) + offsetHeight))
-        }else {
-            window.scroll(0, ((window.innerHeight*1.5) + offsetHeight))
-        }
-    }
-    var x = window.matchMedia("(max-height: 700px)")
-    var y = window.matchMedia("(max-height: 800px)")
-    var z = window.matchMedia("(max-height: 900px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction)
+    window.scroll(0, (sectionHeight.offsetHeight + offsetHeight))
+    // function myFunction(x) {
+    //     if (x.matches) {
+    //         window.scroll(0, ((window.innerHeight * 2) + offsetHeight))
+    //     }else if (y.matches){
+    //         window.scroll(0, ((window.innerHeight * 1.79) + offsetHeight))
+    //     }else if (z.matches){
+    //         window.scroll(0, ((window.innerHeight * 1.95) + offsetHeight))
+    //     }else {
+    //         window.scroll(0, ((window.innerHeight*1.5) + offsetHeight))
+    //     }
+    // }
+    // var x = window.matchMedia("(max-height: 700px)")
+    // var y = window.matchMedia("(max-height: 800px)")
+    // var z = window.matchMedia("(max-height: 900px)")
+    // myFunction(x) // Call listener function at run time
+    // x.addListener(myFunction)
 }
 
 //about me animations
@@ -104,7 +115,7 @@ Object.entries(object).map(([key, value])=>{
     function myFunction(x) {
         if (x.matches) {
             //projects animation
-            let desktop = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "center -=50%"}});
+            let desktop = gsap.timeline({scrollTrigger:{ trigger:`${value.id}`, start: "center top"}});
 
             desktop.from(`${value.img}`, { y: 100, opacity: 0, duration: 1, delay: 0.3})
             .from(`${value.info}`, { x: 200, opacity: 0, duration: 1, delay: 0.3}, "-=1.4")

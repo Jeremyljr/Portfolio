@@ -180,18 +180,6 @@ a {
   padding: 0;
 }
 
-.curve {
-  width: 100%;
-  margin-top: 10vw;
-  /* position: absolute; */
-}
-
-.hero_2 {
-  display: flex;
-  flex-direction: column;
-  column-gap: 0;
-}
-
 .moreInfo {
   width: 100%;
   padding: 5vw 0;
@@ -209,13 +197,29 @@ a {
   width: 100%;
 }
 
+/* ------------------------------------------------- */
+.curve {
+  width: 100%;
+  margin-top: 5vw;
+  /* position: absolute; */
+}
+
+.hero_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  column-gap: 0;
+  background-color: var(--backgroundLight);
+}
+
 .hero3Container {
   width: 60vw;
   margin-top: 100px;
 }
 
 .hero3Container > * {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .imageContainer_1 {
@@ -226,20 +230,34 @@ a {
 
 .featuresImage {
   object-fit: cover;
-  width: 47%;
 }
 
-.imageContainer_2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  max-width: 70vw;
+.card1_1 {
+  width: 55%;
 }
 
-.featuresImage2 {
-  object-fit: cover;
+.card1_2 {
+  width: 35%;
+}
+
+.card2_1 {
+  width: 30%;
+}
+
+.card2_2 {
+  width: 60%;
+}
+
+.card3_1 {
   width: 50%;
+}
+
+.rightCardImg {
+  width: 45%;
+}
+
+.card3_2 {
+  width: 100%;
 }
 
 .footer {
@@ -315,11 +333,19 @@ a {
     flex-direction: column;
   }
 
-  .featuresImage,
-  .featuresImage2 {
-    width: 80%;
+  .featuresImage {
+    width: 60%;
     align-self: center;
     margin-top: 25px;
+  }
+
+  .rightCardImg {
+    width: 60%;
+    align-self: center;
+  }
+
+  .card3_2 {
+    width: 100% !important;
   }
 }
 
@@ -340,8 +366,7 @@ a {
     width: 90vw;
   }
 
-  .imageContainer_1,
-  .imageContainer_2 {
+  .imageContainer_1 {
     max-width: 90vw;
   }
 }
@@ -352,7 +377,7 @@ a {
   }
 
   .projectInfoContainer {
-    min-height: 1000px;
+    min-height: 900px;
   }
 
   .projectContainer {
@@ -369,5 +394,10 @@ a {
 
   .individualProjects {
     width: 100%;
+  }
+
+  .featuresImage,
+  .rightCardImg {
+    width: 80%;
   }
 }
