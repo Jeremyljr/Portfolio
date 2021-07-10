@@ -137,6 +137,7 @@ a {
 .projectTitle {
   font-size: 40px;
   font-weight: var(--bold);
+  color: var(--accent);
 }
 
 .projectSubtitle,
@@ -265,6 +266,10 @@ a {
   justify-content: space-around;
 }
 
+.fab {
+  transition: 0.5s ease;
+}
+
 /* hovers */
 @media (hover: hover) and (pointer: fine) {
   .navLinks:hover {
@@ -283,6 +288,10 @@ a {
     background-color: var(--secondary);
     color: black;
     transition: 0.5s ease;
+  }
+
+  .fab:hover {
+    color: var(--secondary);
   }
 }
 
