@@ -137,7 +137,7 @@ a {
 .projectTitle {
   font-size: 40px;
   font-weight: var(--bold);
-  color: var(--accent);
+  /* color: var(--accent); */
 }
 
 .projectSubtitle,
