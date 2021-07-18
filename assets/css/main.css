@@ -860,6 +860,10 @@ p {
     width: 120vw;
   }
 
+  .projectDescription {
+    margin: 25px 0;
+  }
+
   .individualFreelancingContainer {
     flex-wrap: wrap;
   }

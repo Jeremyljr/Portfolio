@@ -156,6 +156,10 @@ a {
   margin-top: 1em;
 }
 
+.technology {
+  margin-top: 20px;
+}
+
 .learnMoreButton,
 .watchLiveButton {
   width: 100px;
@@ -324,6 +328,7 @@ a {
   .projectInfoContainer {
     width: 100%;
     min-height: 600px;
+    margin-top: 25px;
   }
 
   .bg {
@@ -359,6 +364,11 @@ a {
 }
 
 @media screen and (max-width: 834px) {
+  .projectDescription {
+    line-height: 30px;
+    font-size: 15px;
+  }
+
   .individualProjects {
     width: 90vw;
   }
