@@ -320,22 +320,9 @@ body {
 }
 
 .hero-ampersand {
-  border-top-style: solid;
-  border-top-width: 3px;
-  border-top-color: var(--primary);
-  border-right-style: solid;
-  border-right-width: 3px;
-  border-right-color: var(--primary);
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: var(--primary);
-  border-left-style: solid;
-  border-left-width: 3px;
-  border-left-color: var(--primary);
-  background-image: linear-gradient(to bottom, var(--primary), var(--primary));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  background-image: none;
   border-radius: 300px;
   justify-content: center;
   align-items: center;
