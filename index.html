@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Jul 04 2024 15:08:28 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jul 06 2024 22:08:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6658d86862e5c3fd9fba7736" data-wf-site="6658d86862e5c3fd9fba7730">
 <head>
   <meta charset="utf-8">
@@ -54,7 +54,7 @@ html.lenis {
     <div data-animation="over-left" data-collapse="medium" data-duration="500" data-easing="ease-in-quad" data-easing2="ease-in-out-quad" data-doc-height="1" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
-          <a href="index.html" aria-current="page" class="navbar-brand-three w-nav-brand w--current">
+          <a href="#hero-section" class="navbar-brand-three w-nav-brand">
             <div class="w-embed"><svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 33H18V42V42C15.2386 42 13 39.7614 13 37V33Z" fill="black"></path>
                 <path d="M19 13C19 10.2386 21.2386 8 24 8V8V42H19V13Z" fill="black"></path>
@@ -71,10 +71,6 @@ html.lenis {
               </div>
               <ul role="list" class="nav-menu-block w-list-unstyled">
                 <li>
-                  <a href="index.html" aria-current="page" class="nav-link w--current">Home</a>
-                  <div class="nav-underline"></div>
-                </li>
-                <li>
                   <a href="#aboutme-section" class="nav-link">About</a>
                   <div class="nav-underline"></div>
                 </li>
@@ -84,6 +80,10 @@ html.lenis {
                 </li>
                 <li>
                   <a href="#portfolio-section" class="nav-link">Work</a>
+                  <div class="nav-underline"></div>
+                </li>
+                <li>
+                  <a href="mailto:hello@jeremyljr.com" class="nav-link cta">Say Hello!</a>
                   <div class="nav-underline"></div>
                 </li>
               </ul>
@@ -143,7 +143,14 @@ html.lenis {
         <div class="about-me-description-container">
           <div text-split="" aboutmeright-words-slide-up="" class="description-text primary-headline">I AM JEREMY, I CRAFT INNOVATIVE <span class="description-text secondary---headline">WEB DESIGNS </span>FOR DYNAMIC BUSINESSES BY FOCUSING ON <span class="description-text secondary---headline">ORIGINALITY</span> &amp; <span class="description-text secondary---headline">FUNCTIONALITY</span></div>
         </div>
-        <a href="mailto:hello@jeremyljr.com" class="primary-button about-me-contact-button w-button">WORK WITH ME</a>
+        <a data-w-id="ec2ae743-f693-a075-df21-935c34189972" href="#portfolio-cards" class="button-animation-container w-inline-block">
+          <div class="button-animation">
+            <div class="button-animation-text primary-label">WORK WITH ME</div>
+          </div>
+          <div class="button-animation">
+            <div class="button-animation-text button-text-2 primary-label">WORK WITH ME</div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -192,6 +199,14 @@ html.lenis {
         </div><img src="images/Services-scribe-3.png" loading="lazy" alt="">
       </div>
     </div>
+    <a data-w-id="ec2ae743-f693-a075-df21-935c34189972" href="#portfolio-cards" class="button-animation-container w-inline-block">
+      <div class="button-animation">
+        <div class="button-animation-text primary-label">EXPLORE MY WORK</div>
+      </div>
+      <div class="button-animation">
+        <div class="button-animation-text button-text-2 primary-label">EXPLORE MY WORK</div>
+      </div>
+    </a>
   </section>
   <section id="portfolio-section" class="portfolio-section">
     <div class="portfolio-section-container">
@@ -213,7 +228,7 @@ html.lenis {
       <div class="scroll-spacer"></div>
       <div data-w-id="579c3044-bd3a-3d61-effd-5e22aeecdbc4" class="hz-track">
         <div class="hz-camera">
-          <div class="portfolio-cards-container">
+          <div id="portfolio-cards" class="portfolio-cards-container">
             <div class="portfolio-card">
               <a href="projects/chloes-studio.html" class="portfolio-info-card w-inline-block">
                 <div class="portfolio-showcase">
@@ -240,9 +255,9 @@ html.lenis {
               </a>
             </div>
             <div class="portfolio-card">
-              <a href="#" class="portfolio-info-card w-inline-block">
+              <a href="projects/learning-suite.html" class="portfolio-info-card w-inline-block">
                 <div class="portfolio-showcase">
-                  <div class="portfolio-showcase-container"><img src="images/Team-Central.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 480px, 478px" srcset="images/Team-Central-p-500.png 500w, images/Team-Central.png 624w" alt="" class="project-mockup">
+                  <div class="portfolio-showcase-container"><img src="images/Learning-Suite.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 480px, 478px" srcset="images/Learning-Suite.jpg 500w, images/Learning-Suite.jpg 800w, images/Learning-Suite.jpg 983w" alt="" class="project-mockup">
                     <div class="portfolio-label-container">
                       <div class="portfolio-label primary-label">CMS</div>
                       <div class="portfolio-label primary-label">Webflow Development</div>
@@ -259,7 +274,7 @@ html.lenis {
                     </svg></div>
                 </div>
                 <div>
-                  <div class="portfolio-card-title primary-headline">Team CMS</div>
+                  <div class="portfolio-card-title primary-headline">Learning-Suite</div>
                   <div class="portfolio-card-description primary-body">Custom-built CMS that is both user-friendly &amp; minimal looking. Achieving greater efficiency, better collaboration, and enhanced productivity in the team.</div>
                 </div>
               </a>
@@ -334,7 +349,7 @@ html.lenis {
                     </svg></div>
                 </div>
                 <div>
-                  <div class="portfolio-card-title primary-headline">VERA-Rentals</div>
+                  <div class="portfolio-card-title primary-headline">Financial Rentals App</div>
                   <div class="portfolio-card-description primary-body">With an intuitive and clean design, the integrated tool offers a seamless  tender deal creation process for a specific financial service category in the company.</div>
                 </div>
               </a>
@@ -344,39 +359,39 @@ html.lenis {
       </div>
     </div>
   </section>
-  <section class="footer-section">
+  <section id="footer-section" class="footer-section">
     <div class="scroll-spacer"></div>
     <div class="footer-section-container">
-      <div class="footer-middle-content"><img src="images/JL-Logo-All-White.png" loading="lazy" alt="" class="footer-logo">
-        <div class="footer-mega-text secondary---display">Let’s Talk about your next big project</div>
+      <div class="footer-middle-content"><img src="images/JL-Logo-All-White.png" loading="lazy" footersubtext-words-slide-down="" alt="" class="footer-logo">
+        <div text-split="" footer-words-slide-down="" class="footer-mega-text secondary---display">Let’s Talk about your next big project</div>
         <div>
-          <div class="email-me-label">Drop me an email:</div>
-          <a href="mailto:hello@jeremyljr.com" class="email-me-address primary-title">hello@jeremyljr.com</a>
+          <div text-split="" footersubtext-words-slide-down="" class="email-me-label">Drop me an email:</div>
+          <a text-split="" footersubtext-words-slide-down="" href="mailto:hello@jeremyljr.com" class="email-me-address primary-title">hello@jeremyljr.com</a>
         </div>
         <div class="footer-button-container">
-          <a href="#" class="link-button w-button">LinkedIn</a>
-          <a href="#" class="link-button w-button">Instagram</a>
+          <a text-split="" footersubtext-words-slide-down="" href="#" class="link-button w-button">LinkedIn</a>
+          <a text-split="" footersubtext-words-slide-down="" href="#" class="link-button w-button">Instagram</a>
         </div>
       </div>
       <div class="_4-corner-text-container">
         <div class="footer-corner-text-container">
           <div>
-            <div class="footer-side-text-big-left">Web Designer Developer</div>
-            <div class="footer-side-text-left-small primary-label">Portfolio 2024</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-big-left">Web Designer Developer</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-left-small primary-label">Portfolio 2024</div>
           </div>
           <div>
-            <div class="footer-side-text-big-right">Availability for freelancing work</div>
-            <div class="footer-side-text-right-small primary-label">June 2024</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-big-right">Availability for freelancing work</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-right-small primary-label">June 2024</div>
           </div>
         </div>
         <div class="footer-corner-text-container">
           <div>
-            <div class="footer-side-text-big-left">Designed &amp; Created by</div>
-            <div class="footer-side-text-left-small primary-label">Jeremy Lee</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-big-left">Designed &amp; Built by</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-left-small primary-label">Jeremy Lee</div>
           </div>
           <div>
-            <div class="footer-side-text-big-right">©2024 – All Rights Reserved</div>
-            <div class="footer-side-text-right-small primary-label">jeremyljr.com</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-big-right">©2024 – All Rights Reserved</div>
+            <div text-split="" footersubtext-words-slide-down="" class="footer-side-text-right-small primary-label">jeremyljr.com</div>
           </div>
         </div>
       </div>
@@ -403,7 +418,7 @@ html.lenis {
             <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
             <! --MUST BE LAST -->
               <! --Code Sandbox -->
-                <script defer="" src="https://zpsk9n.csb.app/pageTransition.js"></script>
+                <script src="https://zpsk9n.csb.app/main.js"></script>
                 <! --LENIS SMOOTH SCROLL -->
                   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
                   <script>
@@ -437,6 +452,6 @@ $("[data-lenis-toggle]").on("click", function () {
   }
 });
 </script>
-                  <script defer="" src="https://zpsk9n.csb.app/app.js"></script>
+                  <script defer="" src="https://zpsk9n.csb.app/home.js"></script>
 </body>
 </html>
