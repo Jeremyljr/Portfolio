@@ -680,7 +680,6 @@ body {
 
 .services-card-description.primary-body {
   width: 40%;
-  margin-top: 45px;
 }
 
 .scribles {
@@ -962,6 +961,7 @@ body {
 
 .services-card-subtitle.primary-label {
   color: var(--primary-s);
+  display: none;
 }
 
 .services-icon {
