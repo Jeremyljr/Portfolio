@@ -298,7 +298,11 @@ body {
 }
 
 .hero-title-text.spacing {
+  color: var(--highlight);
+  text-align: right;
   margin-left: 20vw;
+  position: relative;
+  top: 0;
 }
 
 .hero-ampersand {
@@ -1487,6 +1491,20 @@ body {
 
 .body-2 {
   font-family: Neuemontreal, Arial, sans-serif;
+}
+
+.hero-title-animation {
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.hero-title-animation-box {
+  height: 8vw;
+  padding-right: 4px;
+  overflow: clip;
 }
 
 @media screen and (max-width: 991px) {
